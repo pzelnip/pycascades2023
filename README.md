@@ -372,17 +372,231 @@ One use cas'es simplicity is anothyer use case's complexity
 
 chrisjrn.com
 
+--
+
+## Day 2
+
+## Lightning Talks
+
+### Global domain names and email addresses are here!
+
+no longer limited to latin script
+
+Jim DeLaHunt
+
+Indigenous languages
+
+idna - does it wrong
+
+Technical info <https://uasg.tech>
+
+<https://universalacceptance.day>
+
+<http://go.jdlh.com/pycascades2023>
+
+### Git Reset
+
+Wes Lord
+
+<https://github.com/weslord/git-demos>
+<https://git-man-page-generator.lokaltog.net/>
+
+```shell
+git log --online --graph --all
+
+```
+
+Merging branches
+rebasing
+
+### Do Everything with Pydantic
+
+Sam Edwardes
+
+github.com/SamEdwardes
+
+Pydantic with SQL?
+
+* sqlmodel example
+
+### A Crash Course in Digital Accessibility
+
+Tony Fast
+
+wcag guidelines
+wuh-cag guidelines
+
+<https://tonyfast.github.io/tonyfast/xxiii/2023-03-18-pycascades-ally-talk.html>
+
+### Pycon US 2023
+
+Mariatta
+
+Pycon US chair!
+
+Online only option - $100USD
+
+Pycon US Stories Slideshow
+
+<https://bit.ly/3ZSG6t1>
+
+### Yellowsto0ne Codera
+
+Robin
+
+<https://robinrh.github.io>
+
+Puzzles for teaching Python
+
+### Pooch A Friend to fetch your data files
+
+Santiago Soler
+
+<https://fatiando.org/pooch>
+
+Download data files
+
+Used by a bunch of the scientific libraries (scipy, etc)
+
+### Lets Spice this up
+
+Andres
+
+August Python Conference in Latin America
+
+Pycion Latam 2023
+
+Mexico
+
+<https://pylatam.org/en>
 
 
+## Writing an I2C Sensor Driver
 
+Colin Dietrich
 
+<https://2023.pycascades.com/program/talks/writing-an-i2c-sensor-driver/>
 
+I2C
 
+Crash course in hardware
 
+<https://github.com/crdietrich/meerkat>
 
+--
 
+## Cloud Infrastructure From Python Code: How Far Could We Go?
 
+Asher Sterkin
 
+<https://2023.pycascades.com/program/talks/cloud-infrastructure-from-python-code-how-far-could-we-go/>
+
+Virtual presentation
+
+Slides - <https://www.slideshare.net/AsherSterkin/pycascades23pdf>
+
+is ifc same as iac?  No
+
+CDKs - don't solve the core prooblem anew but rather wrap the same low level
+abstractions in a programming language
+
+Solution: Raise the level, bridge the gap
+
+PyIFC - seems to be this idea of generating CDK type stuff from python code?
+
+Example that took a python app, and seemed to produce a cloudformation template
+
+caios
+
+--
+
+## Sharing is Caring - Sharing pytest Fixtures
+
+Brian Okken
+
+<https://2023.pycascades.com/program/talks/sharing-is-caring-sharing-pytest-fixtures/>
+
+<https://pythontest.com/pycascades-2023>
+
+Fixture crash course
+
+Sharing via conftest.py
+
+What about sharing between projects?
+
+Make a pytest plugin
+
+Walked through example using tox & flit.
+
+What is pytester?
+
+Private classifier for internal only projects, to avoid publishing to pypi
+
+Nice practical example talk
+
+--
+
+## Untangle Python Spaghettis - Deep Dive Into Environments and Dependencies Management
+
+Cheuk Ting Ho
+
+<https://2023.pycascades.com/program/talks/untangle-python-spaghettis-deep-dive-into-environments-and-dependencies-management/>
+
+<https://cheuk.dev>
+
+Deep dive into environments and dependencies management
+
+Why venvs?
+
+* avoid conflicts
+* preserve versions
+* discard when not needed
+
+Where are your packages stored?
+
+How Python finds your packages?
+
+* import statement
+* searches for both python code and extension modules
+* search along `sys.path`
+
+Example creating a venv using `-m venv`
+
+looking into the contents of a venv directory
+
+```python
+import sys
+print(sys.path)
+```
+
+Discussion of how the scripts in bin modify sys.path
+
+`pip list` to show all packages installed.  Look into `site-packages`
+
+Conda
+
+Data scientists are often different as they often use conda rather than pip &
+such.  Lets look at what's different.
+
+* comes with Anaconda
+* environment manager that
+* doubles as a package manager
+
+Using Conda
+
+* Similar mechanics but
+* live by default in the envs folder of your conda directory
+* independent from venv
+* work on system level
+* works with other languages as well
+
+--
+
+## Vulnerability Scanning For Free (as in Puppies)
+
+Terri Oda
+
+<https://2023.pycascades.com/program/talks/vulnerability-scanning-for-free-as-in-puppies/>
 
 
 
