@@ -598,10 +598,152 @@ Terri Oda
 
 <https://2023.pycascades.com/program/talks/vulnerability-scanning-for-free-as-in-puppies/>
 
+Virtual Talk
+
+Slides <https://curiousity.ca/2023/vulnerability_scanning_for_free/>
+
+Why should you care about known vulnerability scanning?
+
+Someone is making you do it
+
+Supply Chain Security
+
+* Govt regulations
+* Corporate policies
+
+free as in puppies: no upfront cost, but signing up for years of food, walks, vet bills, training
+
+cve-bin-tool - <https://pypi.org/project/cve-bin-tool/>
+
+Get API key: <https://nvd.nist.gov/developers/request-an-api-key>
+
+Can do component discover scan or Known Bill of Meterials (SBOM) scan
+
+What should I do when it finds something?
+
+* Ideally fix it, but practically..
+* Triage
+  * was the detection correct?
+  * What is the security problem?
+  * is this cve valid?
+* Update
+  * is there a fix available?
+  * can we update?
+* Mitigate?
+  * what is recommended?
+  * What limits risk?
+* Replace
+  * are there safer alternatives?
+
+Unfixed/unfixable issues
+
+* fixing things can take time
+  * developers may not have resources/interest
+  * fixes can be hard to get right
+* CVEs are filed by humans
+  * some are incorrect/bad
+  * some report (abuse of) intentional behaviour
+* disputing issues can take time
+  * and sometimes nobody bothers
+
+Are vulnerability rules going to ruin the world?
+
+Can you ever have a large system with 0 known vulnerabilities? Possibly not.
+
+Is it more expensive to fix vulnerabilities or prevent people from reporting them?  Uh oh...
+
+Is it possible to make policies that won't ruin everything?
+
+--
+
+## Fear the Mutants. Love the Mutants
+
+Max Kahan
+
+<https://2023.pycascades.com/program/talks/fear-the-mutants-love-the-mutants/>
+
+Mutation testing
+
+Why do we write unit tests?
+
+From audience:
+
+* make sure we don't break something
+* documentation
+* get paid by the line (LOL)
+
+His:
+
+* to prove your code works
+* documentation
+* inspire confidence
+* regression testing
+* refactoring
+* compliance
+
+The problem - projects grow
+
+Coverage example
+
+[Goodharts Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) - "When a metric
+becomes a target, it ceases to be a good metric"
+
+How can we understand what our tests are really doing?
+
+How do we know our tests are trustworthy?
+
+"Who watches the watchers?"
+
+Mutation testing Frameworks
+
+* mutmut
+* cosmic-ray
+
+Tips:
+
+* Start locally
+* Start small
+* subset of a project
+
+Tweak for performance:
+
+* exclude tests
+* exclude code
+
+CI example, he runs manually, why?
+
+* don't want it to become a number that's a target
+* false positives/mutants that are fine (ex: changing the name of a logger)
+
+--
+
+## Using Lark to Parse Text
+
+Robin Reynolds-Haertle
+
+<https://2023.pycascades.com/program/talks/using-lark-to-parse-text/>
+
+Using Lark
+
+Working through example of using Lark to parse text, discussion of parsers &
+grammars and such
+
+--
+
+## Analysing the Looping Mechanisms with Python Lists
+
+Syed Ansab Waqar Gillani & Syed Muhammad Dawoud Sheraz Ali
+
+<https://2023.pycascades.com/program/talks/analysing-the-looping-mechanisms-with-python-lists/>
 
 
+--
 
+## What's That Smell? Detecting Air Quality with Python, Raspberry Pi, and Redis
 
+Justin Castilla
+
+<https://2023.pycascades.com/program/talks/whats-that-smell-detecting-air-quality-with-python-raspberry-pi-and-redis/>
 
 
 
