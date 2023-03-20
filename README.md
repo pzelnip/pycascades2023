@@ -728,6 +728,8 @@ Using Lark
 Working through example of using Lark to parse text, discussion of parsers &
 grammars and such
 
+Well presented talk, topic not really of interest for me.
+
 --
 
 ## Analysing the Looping Mechanisms with Python Lists
@@ -736,6 +738,9 @@ Syed Ansab Waqar Gillani & Syed Muhammad Dawoud Sheraz Ali
 
 <https://2023.pycascades.com/program/talks/analysing-the-looping-mechanisms-with-python-lists/>
 
+Virtual Presentation
+
+Iterables in Python
 
 --
 
@@ -745,8 +750,20 @@ Justin Castilla
 
 <https://2023.pycascades.com/program/talks/whats-that-smell-detecting-air-quality-with-python-raspberry-pi-and-redis/>
 
+Bummer introductory stats re wildfires
 
+We learned about fire tornados (400km/h)
 
-------------
+<https://github.com/redis-developer/redis-aqi-monitor.git>
+
+--
+
+## Closing Remarks
+
+Much thanks to everyone involved.
+
+--
+
+## Misc Tidbits
 
 Udemy python deep dive course
